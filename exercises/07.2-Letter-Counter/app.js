@@ -2,5 +2,9 @@ let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget
 let counts = {};
 
 // your code here
+for (let index = 0; index < par.length; index++) {
+    const element = par[index];
+    
+}
 
 console.log(counts);
