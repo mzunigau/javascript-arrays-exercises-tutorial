@@ -2,9 +2,23 @@ let par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget
 let counts = {};
 
 // your code here
-for (let index = 0; index < par.length; index++) {
-    const element = par[index];
-    
-}
 
+for (let index = 0; index < par.length; index++) {
+
+    let letra = par[index].toLowerCase();    
+   
+    if (letra != ' ') {
+
+        if (counts.hasOwnProperty(letra)) {
+
+            let value = counts[letra];
+            counts[letra] = value + 1;
+
+        } else {
+
+            counts[letra] = 1;
+
+        }
+    }
+}
 console.log(counts);
